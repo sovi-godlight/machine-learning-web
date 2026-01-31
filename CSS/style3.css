@@ -1,0 +1,146 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #f9fbff);
+    margin: 0;
+    padding: 0;
+}
+
+
+.ml-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 45px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: #1a2a3a;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.triangle::before {
+    content: "▶";
+    color: #1a73e8;
+    margin-right: 12px;
+    font-size: 0.9em;
+}
+
+
+.ml-part {
+    margin-bottom: 50px;
+}
+
+.ml-part p {
+    line-height: 1.8;
+    color: #444;
+}
+
+
+.dot-list {
+    margin-left: 25px;
+}
+
+.dot-list li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+
+.schema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    animation: pulse 4s infinite;
+}
+
+.schema.vertical {
+    flex-direction: column;
+}
+
+.box {
+    background: #1a73e8;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 5px;
+    box-shadow: 0 5px 15px rgba(26,115,232,0.4);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.08);
+}
+
+.arrow {
+    font-size: 1.6em;
+    margin: 5px 10px;
+    color: #555;
+}
+
+
+.fade-in {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.slide-up {
+    animation: slideUp 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.92; }
+    100% { opacity: 1; }
+}
+
+.back-home {
+    text-align: center;
+    margin: 60px 0 30px;
+}
+
+.back-home a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.back-home a:hover {
+    background: linear-gradient(135deg, #1a252f, #2980b9);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
